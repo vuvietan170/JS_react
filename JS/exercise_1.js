@@ -15,3 +15,12 @@ for (let i = 1; i<=9; i++){
             console.log(`${i}*${j} = ${i*j}`)
         }
 }
+//bai3
+let checkOE = n => {
+    if  (n%2==0){
+        console.log("so chan");
+    } else {
+        console.log("so le");
+    }
+}
+console.log(checkOE(6))
