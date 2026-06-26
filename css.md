@@ -19,3 +19,8 @@ align-content : khoang cach giua cac dong (stretch: keo dai dong phu hop voi hop
 - Hover,Transitions,Shadow
 - Chrome dev tools and CSS box Model (style,computed)
 - Text style (html entity: check mark,greater than,....)
+- Nested layouts
+- Display: block/ inline-block
+- Grid
+- Flexbox(navigation,sidebar)
+- Position (absolute, fixed,relative)
