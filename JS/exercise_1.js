@@ -24,3 +24,45 @@ let checkOE = n => {
     }
 }
 console.log(checkOE(6))
+//bai4
+const readline = require("readline");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question("So1: ",(a) => {
+    rl.question("Phep tinh: " , (op) => {
+        rl.question("So2: ",(b) =>{
+
+            const num1 = Number(a);
+            const num2 = Number(b);
+
+             switch(op){
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (b==0){
+                return null;
+            }
+            else{
+                result = num1 / num2;
+            }
+            break;
+        default:
+            result = "Error";
+    }
+    console.log(result);
+    rl.close();
+        });
+    });
+});
+
+   
+
