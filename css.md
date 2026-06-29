@@ -24,3 +24,6 @@ align-content : khoang cach giua cac dong (stretch: keo dai dong phu hop voi hop
 - Grid
 - Flexbox(navigation,sidebar)
 - Position (absolute, fixed,relative)
+# icons
+- fontawesome.com
+- font.google.com
