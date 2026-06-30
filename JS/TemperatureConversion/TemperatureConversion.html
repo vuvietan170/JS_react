@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="TemperatureConversion.css">
+    </head>
+    <body>
+        <form>
+            <h1>Temperature Conversion</h1>
+            <input type="number" id="Textbox" value="36"> <br>
+
+            <input type="radio" id="ToF" name="unit">
+            <label for="ToF">C -> F</label><br>
+
+            <input type="radio" id="ToC" name="unit">
+            <label for="ToC">F -> C</label> <br>
+
+            <button type="button" onclick="convert()">Submit</button> 
+            <p id="result">result</p>
+        </form>
+        <script src="TemperatureConversion.js"></script>
+    </body>
+</html>
