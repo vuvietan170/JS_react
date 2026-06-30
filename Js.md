@@ -99,3 +99,74 @@ while(!loggedIn){
 for loop = repeat some code a LIMITED amount of times
 Structure: for(let i = 0; i<= 2; i++){}
 
+# 15 Function
+function = A section of reusable code. Declare code once, use it whenever you want. Call the function to execute that code
+Structure = function nameFunction(variable){}
+**Arrow Function**: 
+# 16 Variable Scope 
+variable scope = where a variable is recognized and accessible (local vs global)
+```
+//global
+let x = 3;
+fun1();
+function fun1(){
+    console.log(x);
+}
+function fun2(){
+    console.log(x);
+}
+fun1(),fun2() => 3
+//local
+let x= 2;
+function fun1(){
+    let x = 1;
+    console.log(x);
+}
+function fun2(){
+    let x = 3;
+    console.log(x);
+}
+fun2(); => 3
+fun1(); => 1
+```
+# 17 Array
+array = a variable like structure that can hold more than 1 value
+```
+let fruits = ["apple", "orange", "banana"];
+fruits.push("elemnt");
+fruits.pop();
+fruits.length;
+fruits.indexOf("orange"); => 1
+```
+# 18 Spread operator
+Spread operator = ... allows an iterable such as an array or string to be expanded into seperate elements (unpacks the elements)
+```
+let nums = [1,2,3,4,5,7,6];
+let maxNum = Math.max(...nums);
+console.log(maxNum);
+
+let name = "viet Tan";
+let letters = [...name,"cut"];
+console.log(letters); 
+['v','t','e','t',' ','T','a','n','cut'] (9)
+```
+# 19 Rest parameters
+rest parameters = (...rest) allow a function work with a variable number of arguments by bunding them into an array
+spread = expands an array into seperate elements
+rest = bundles separate elements into an array
+```
+function openFridge(...foods){
+    console.log(...foods);
+}
+function getFood(...foods){
+    return foods;
+}
+const food1 = "pizza"
+const food2 = "dai"
+const food3 = "puss."
+const food4 = "cut"
+
+//openFridge(food1, food2 ,food3 ,food4)
+const foods = getFood(food1, food2 ,food3 ,food4)
+console.log(foods)
+```
