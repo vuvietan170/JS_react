@@ -170,3 +170,30 @@ const food4 = "cut"
 const foods = getFood(food1, food2 ,food3 ,food4)
 console.log(foods)
 ```
+# 20 CallBacks
+callback = a function that is passed as an argument to another function.
+used to handle asynchronous operations:
+1. Reading a file
+2. Network requests
+3. Interacting with databases
+```
+function greet(name,callback){
+    console.log(`hello ${name}`);
+    callback();
+}
+function goodbye(){
+    console.log("cut");
+}
+greet("alice",goodbye); this is callbacks
+//greet(goodbye()) this is callback function
+```
+# 21 forEach()
+forEach() = method used to iterate over the element of an array and apply a specified function(callback) to each element
+array.forEach(callback)
+```
+let numbers = [1,2,3,4,5];
+function display(element){
+    console.log(element)
+}
+numbers.forEach(display);
+```

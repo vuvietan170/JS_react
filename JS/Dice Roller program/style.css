@@ -1,4 +1,4 @@
-body{
+#container{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 32px;
@@ -25,4 +25,7 @@ input{
 }
 label{
     font-weight: bold;
+}
+#DiceImages img{
+    margin-right: 30px;
 }
