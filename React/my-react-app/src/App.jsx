@@ -4,8 +4,10 @@
 // import Weather from "./components/Weather";
 // import RegisterForm from "./components/RegisterForm";
 import ColorPicker from "./ColorPicker";
+import DigitalClock from "./DigitalClock";
 import ToDoList from "./ToDolist";
 import UpdateObject from "./UpdateObject";
+import MyComponent from "./UseEffect";
 import UseState from "./UseState";
 function App(){
   // const props  = [
@@ -33,7 +35,7 @@ function App(){
   // );
   return(
     <>
-    <ToDoList/>
+    <DigitalClock/>
     </>
   );
  

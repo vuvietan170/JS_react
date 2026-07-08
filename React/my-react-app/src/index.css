@@ -1,0 +1,20 @@
+body{
+    background-color: red;
+    margin: 0;   
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock-container{
+
+}
+.clock{
+    color: black;
+    font-size: 6rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+
+}

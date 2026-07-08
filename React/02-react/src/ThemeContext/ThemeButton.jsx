@@ -1,12 +1,11 @@
 import React from "react";
 import { useTheme } from "./ThemeContext";
 
-function ThemeButton(){
-    
+function ThemeButton() {
     //lay cac thuoc tinh cua object thanh ca bien rieng
-    const {theme,SwitchTheme} = useTheme();
+    const { theme, SwitchTheme } = useTheme();
     const style = {
-        background: theme ==="light" ? "#fff" : "#333",
+        background: theme === "light" ? "#fff" : "#333",
         color: theme === "light" ? "#000" : "#fff",
         padding: "50px",
         minHeight: "100vh",
