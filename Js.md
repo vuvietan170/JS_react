@@ -223,6 +223,7 @@ function isEven(element){
 ```
 # 24 reduce()
 .reduce() = reduce the elements of an array to a single value
+.reduce(callback, initialValue)
 ```
 const prices = [5,30,10,25,20];
 const sum = prices.reduce(previous,next) => {
@@ -520,3 +521,4 @@ nested objects = objects inside of other Objects. Allow you to represent more co
 Person{Adress{}, ContactInfo{}}
 ShoppingCart{Keyboard{}, Mouse{}, Monitor{}}
 
+# 37 Closure
