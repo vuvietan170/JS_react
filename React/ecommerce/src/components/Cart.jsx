@@ -14,39 +14,24 @@ export function Cart() {
         <div>
             <h3>Giỏ hàng ({cartItems.length})</h3>
             {detailed.length === 0 && (
-                <p style={{ color: "#888" }}>Giỏ hàng trống.</p>
+                <p class="text-center text-2xl text-gray-300">Giỏ hàng trống.</p>
             )}
             {detailed.map((i) => (
-                <div
-                    className="card row"
-                    key={i.productId}
-                    style={{
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                    }}
-                >
+                <div key={i.productId}>
                     <span>{i.name}</span>
-                    <div className="row" style={{ alignItems: "center" }}>
+                    <div>
                         <button
-                            onClick={() =>
-                                changeQty(i.productId, i.qty - 1)
-                            }
+                            onClick={() => changeQty(i.productId, i.qty - 1)}
                         >
                             -
                         </button>
-                        <span style={{ width: 24, textAlign: "center" }}>
-                            {i.qty}
-                        </span>
+                        <span>{i.qty}</span>
                         <button
-                            onClick={() =>
-                                changeQty(i.productId, i.qty + 1)
-                            }
+                            onClick={() => changeQty(i.productId, i.qty + 1)}
                         >
                             +
                         </button>
-                        <span style={{ width: 100, textAlign: "right" }}>
-                            {fmtVnd(i.subtotal)}
-                        </span>
+                        <span>{fmtVnd(i.subtotal)}</span>
                         <button onClick={() => removeFromCart(i.productId)}>
                             Xóa
                         </button>
@@ -54,11 +39,8 @@ export function Cart() {
                 </div>
             ))}
             {detailed.length > 0 && (
-                <div
-                    className="row"
-                    style={{ justifyContent: "space-between", marginTop: 8 }}
-                >
-                    <b>Tổng: {fmtVnd(total)}</b>
+                <div>
+                    <b class='text-center text-2xl text-gray-300 '>Tổng: {fmtVnd(total)}</b>
                     <button onClick={handleCheckout}>Đặt hàng</button>
                 </div>
             )}

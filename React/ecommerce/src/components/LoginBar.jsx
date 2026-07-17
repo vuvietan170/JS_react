@@ -12,7 +12,7 @@ export function LoginBar() {
                 style={{ justifyContent: "space-between", marginBottom: 16 }}
             >
                 <span>
-                    Xin chào, <b>{user.name}</b> 👋
+                    Xin chào, <b>{user.name}</b>
                 </span>
                 <button onClick={logout}>Đăng xuất</button>
             </div>
