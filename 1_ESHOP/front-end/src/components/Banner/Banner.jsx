@@ -9,8 +9,8 @@ const Banner = ({ data }) => {
                      items-center p-8 sm:p-12 text-white rounded-3xl ${data.bgColor}`}
                 >
                     {/* first col  */}
-                    <div className="p-6 sm:p-8">
-                        <p className="text-sm">{data.discount}</p>
+                    <div className="p-6 sm:p-8 relative z-10 opacity-80">
+                        <p className="text-md font-bold hover:text-black">{data.discount}</p>
                         <h1 className="uppercase font-bold text-4xl lg:text-7xl">
                             {data.title}
                         </h1>
@@ -19,7 +19,7 @@ const Banner = ({ data }) => {
                     {/* second col  */}
                     <div className="h-full flex items-center">
                         <img src={data.image} alt="" className="scale-125 w-[250px] md:w-[340px] mx-auto
-                        drop-shadow-2xl object-cover
+                        drop-shadow-2xl object-cover relative z-0
                         "></img>
                     </div>
                     {/* third col  */}

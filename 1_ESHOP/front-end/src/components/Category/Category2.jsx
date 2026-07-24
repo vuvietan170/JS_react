@@ -16,7 +16,7 @@ const Category2 = () => {
                     >
                         <div>
                             <div className="relative z-10 mb-4">
-                                <p className="mb-[2px] text-gray-400 z-10">
+                                <p className="mb-[2px] text-gray-400 ">
                                     Enjoy
                                 </p>
                                 <p className="text-2xl font-semibold mb-[2px]">
@@ -50,7 +50,7 @@ const Category2 = () => {
                                     With
                                 </p>
                                 <p className="text-4xl xl:text-5xl font-bold opacity-50 mb-2">
-                                    PS4
+                                    Speaker
                                 </p>
                                 <Button
                                     text="Browse"

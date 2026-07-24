@@ -16,7 +16,7 @@ const Category = () => {
                     >
                         <div>
                             <div className="relative z-10 mb-4">
-                                <p className="mb-[2px] text-gray-400">Enjoy</p>
+                                <p className="mb-[2px] text-black/50">Enjoy</p>
                                 <p className="text-2xl font-semibold mb-[2px]">
                                     With
                                 </p>
@@ -43,7 +43,7 @@ const Category = () => {
                     >
                         <div>
                             <div className="relative z-10 mb-4">
-                                <p className="mb-[2px] text-gray-400">Enjoy</p>
+                                <p className="mb-[2px] text-black/50">Enjoy</p>
                                 <p className="text-2xl font-semibold mb-[2px]">
                                     With
                                 </p>
@@ -71,7 +71,7 @@ const Category = () => {
                     >
                         <div>
                             <div className="relative z-10 mb-4">
-                                <p className="mb-[2px] text-gray-400 z-10">
+                                <p className="mb-[2px] text-black/50 z-10">
                                     Enjoy
                                 </p>
                                 <p className="text-2xl font-semibold mb-[2px]">
